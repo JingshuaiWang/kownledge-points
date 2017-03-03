@@ -1,0 +1,35 @@
+1.python和C(printf)等其他语言一样，采用print(""),输出数据到屏幕。
+2.shell脚本采用echo命令输出表达式结果到屏幕。
+3._具有特殊含义，指向上一个表达式的结果。
+4.python2.0开始，支持如下重定向：
+	>>> logFile = open("/tmp/mylog.txt","a")
+	>>> print >> logFile,"nihao";
+	>>> logFile.close()
+5.内建函数:
+	in_raw("please input content:");#从标准输入读取一个字符串
+
+6.运算符:
+	// 浮点除法，对结果进行四舍五入
+	/  地板除法，对结果取整
+	** 乘方
+	!= 不等于
+	<> 不等于（已经快被淘汰，不建议使用）
+7.python是动态语言，事先不需要声明变量类型
+8.python支持增量赋值，但是不支持自增和自减，因为Python会把--n解释成-(-n)即为n
+9.python支持五中基本数据类型
+	1. int
+	2. float
+	3. bool
+	4. long 后期版本会实现长整型与整型的无缝结合，再也不会报整型溢出错误
+	5. complex  2 + 3j
+10.python支持6中基本数字类型
+	1.decimal decimal是一个模块，decimal.Decimal("")
+11.列表解析
+	list_parsing = [x ** 2 for x in range(8) if not x % 2]
+	for i, v in enumerate(list_parsing):
+		print(i, v)
+12.文件访问
+	mylog = open("/tmp/mylog","r");#"a", "w", "+", 成功打开后，会把句柄返回给mylog,mylog通过句柄操作数据。
+	mylog.readlines();
+	mylog.close();
+13.
