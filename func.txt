@@ -24,12 +24,15 @@
 		print("hello world",);
 
 10.2 range()
-		for i in range([0],len("wuge")):
+		for i in range([0],len("wuge"),[step]):
 			print(i);
 
-10.3 enumerate()
+10.3 enumerate()#内建类，接收一个可迭代对象，然后返回一个迭代器，可调用next(iter_)
 		for i, v in enumerate("wuge"):
 			print(i,v);
+10.31 reversed() #内建类，接收一个可迭代对象，返回一个迭代器，可调用next(iter_)
+		for i in reversed("wuge"):
+			print(i);
 
 10.4 dir([parameter]) 传参数情况下，显示参数的属性。不传参数的情况下，显示全局变量名字。
 
@@ -96,5 +99,27 @@
 
 10.35 str.find(str1) #查找str1是否在str中，并返回在str中的索引。
 
-10.36 
-  
+10.36 list.remove("e") #移除list中的e元素
+10.37 list.pop(index) #通过索引移除列表中元素，并返回移除的元素
+10.37_01 list.count("wuge") #"wuge"在列表中有多少个
+
+10.38 del list[0] #移除列表中的第一个元素
+
+10.39 del list #删除list的命名空间，使之不存在
+
+10.40 iter(iterable) #接收可迭代对象，返回迭代器
+
+10.41 dict_.keys() dict_.values() dict_items()
+
+10.42 map(func, iterable) #接收一个函数和可迭代对象返回一个迭代器
+
+10.43 filter(func or none, seq) #通过函数设定的规则，遍历序列
+
+10.44 匈牙利命名风格 o 代表object, i代表integer, a代表array, s代表string, f代表float, fn代表函数function, re代表正则表达
+ 
+10.45 import os os是操作系统接口模块，通过它我们可以完成操作系统级别的任务，比如在不同平台上访问文件。
+
+10.46 句柄可操作的函数:read()和readlines()和write()和writelines()，pyhon不会强制加上或者去除换行符。需要程序员自己操作,去除换行操作符，用trip().
+
+10.47 若不用f.close()方法关闭一个文件，则有可能丢失输出到缓冲区的数据。
+
