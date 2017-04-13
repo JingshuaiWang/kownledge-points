@@ -30,3 +30,11 @@
 7. 主流浏览器？
 	IE、Opera、Safari、Chrome、firebox
 
+8. python爬虫库？
+	urllib urllib.urlencode({'kw':kw})
+	urllib2 urllib2.urlopen(request,headers=header)
+
+9. python爬虫遇到问题？
+	1. url参数不能为汉字、需要urllib.urlencode({})处理（转换成url编码格式）
+	2. 忽略ssl证书验证、有些网站的ssl证书没有在CA注册（ssl模块可以处理）
+
